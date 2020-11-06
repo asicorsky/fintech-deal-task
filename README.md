@@ -23,5 +23,5 @@ Go to the target directory in command line which created after install and execu
 3. Event bus handle this event and spawn parallel events (BID) via CompletableFuture and ForkJoinPool for each bid
 4. Event bus handle BID events and create new thread per each queue based on type if it needed, or add to existing queue
 5. System process queue and log the data from the bid
-6. In case if bids for specified type was not updated for a 10 minutes (currently hardcoded, but may externalized), system salvate related thread
-7. In case if bid comes after 10 minutes, system was create new thread 
+6. In case if queue for specified type was not updated for a 10 minutes (currently hardcoded, but may externalized), system salvate related thread
+7. In case if bid comes to queue after 10 minutes, system was create new thread 
