@@ -22,6 +22,6 @@ public class Runner {
 		scheduledExecutor.scheduleAtFixedRate(() -> {
 			var stream = resource.stream();
 			Bus.INSTANCE.fire(new Event<>(EventType.STREAM_READY, new ResourceReadyEvent(stream)));
-		}, 0, 15, TimeUnit.SECONDS);
+		}, 0, 1, TimeUnit.MINUTES);
 	}
 }
